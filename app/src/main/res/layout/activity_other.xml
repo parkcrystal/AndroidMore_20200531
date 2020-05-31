@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".OtherActivity">
 
 
     <Button
-        android:id="@+id/moveBtn"
+        android:id="@+id/goBackBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다른 액티비티로 이동" />
+        android:text="돌아가기" />
 
 </LinearLayout>
