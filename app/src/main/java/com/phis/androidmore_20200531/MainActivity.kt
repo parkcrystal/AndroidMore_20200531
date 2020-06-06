@@ -32,6 +32,21 @@ class MainActivity : BaseActivity() {
         Log.d("메인화면", "onResume 실행")
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.d("메인화면", "onPause 실행")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("메인화면", "onDestroy 실행")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("메인화면", "onStop 실행")
+    }
+
     override fun setValues() {
 
         val users = ArrayList<String>()
@@ -51,6 +66,11 @@ class MainActivity : BaseActivity() {
 
         for(u in 0..5) {
             Log.d("숫자반복", "${u}")
+        }
+
+        for(i in users.indices) {
+            Log.d("숫자", "$i")
+            Log.d("사람이름", users[i])
         }
     }
 
